@@ -1,0 +1,281 @@
+/* font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --work-sans: 'Work Sans', sans-serif;
+    --blue: #005FAC;
+
+}
+
+/* page css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: var(--work-sans);
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
+.txt-org{
+    font-weight: 700;
+}
+
+
+/* header */
+
+header {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/banner/banner3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.banner-info {
+    width: 50%;
+    padding: 5vh 7vw;
+    margin-left: auto;
+    text-align: right;
+    align-self: center;
+}
+
+.banner-info .banner-title {
+    line-height: 80px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.banner-info p {
+    color: #FFFFFF;
+    margin: 25px 0;
+}
+
+.banner-info a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blue);
+    background: white;
+    border-radius: 3px;
+    padding: 16px 25px;
+}
+
+
+
+/* main-section */
+
+main {
+    padding-top: 10vh;
+    width: 75%;
+    margin: 0 auto;
+    /* display: none; */
+}
+
+/******************** previous-year ************************/
+.previous-year {
+    display: flex;
+    align-items: center;
+}
+
+.previous-year .my-img {
+    width: 50%;
+}
+
+.previous-year .details {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.details h2{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.details > p,.details > ul{
+    padding: 10px 0;
+    width: 70%;
+    line-height: 26px;
+}
+.details ul {
+    list-style: none;
+}
+.details ul i{
+    color: rgb(148, 216, 128);
+}
+
+.my-plans {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.my-plans h2 {
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.my-plans .plans {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.plan h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.plan p{
+    font-size: 25px;
+    font-weight: 500;
+    color: #737272;
+    padding-top: 10px;
+
+}
+
+
+.register {
+    /* height: 200px; */
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    background: linear-gradient(90deg, #005FAC 0%, rgba(0, 95, 172, 0) 100%), url("./images/watch.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.register h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.register a {
+    display: inline-block;
+    text-decoration: none;
+    color: #405D8B;
+    background: white;
+    border-radius: 3px;
+    padding: 12px 20px;
+    align-self: start;
+}
+
+/* .....................massage..................... */
+.massage {
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    background-color: #ffffff;
+}
+
+.massage h1 {
+    font-size: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.massage span {
+    font-size: 40px;
+    letter-spacing: normal;
+    font-weight: bolder;
+    color: #696871;
+
+}
+
+.massage .inp {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+}
+
+textarea {
+    display: inline-block;
+}
+
+.submit {
+    padding: 10px 120px;
+}
+
+
+/* .....................footer..................... */
+
+footer {
+    background: #151414;
+    color: #FFFFFF;
+    display: flex;
+    padding: 7% 10%;
+}
+footer h3{
+    font-size: 45px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.future {
+    width: 50%;
+}
+.future p{
+
+    margin-bottom: 8px;
+}
+.future .social img{
+    padding: 10px;
+}
+
+
+.subscribe {
+    width: 50%;
+}
+.subscribe .mid{
+    width: 70%;
+    margin-left: auto;
+}
+
+.subscribe input{
+    width: 70%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #737272;
+    padding: 5px;
+    background: #151414;
+}
+.subscribe a {
+    display: inline-block;
+    text-decoration: none;
+    background: #005FAC;
+    color: white;
+    border-radius: 8px;
+    padding: 16px 25px;
+    align-self: start;
+    margin-top: 10px;
+}
